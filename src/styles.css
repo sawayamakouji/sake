@@ -1,0 +1,97 @@
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1,
+  h2 {
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #ecf0f1;
+    border: none;
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .tab.active {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .content {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .content.active {
+    display: block;
+  }
+  
+  .search-bar {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .search-bar input {
+    flex-grow: 1;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .search-bar button {
+    padding: 5px 10px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .scroll-area {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .item {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  }
+  
+  .item h3 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+  }
+  
+  .item p {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    color: #7f8c8d;
+  }
+  
+  .sub-category {
+    margin-top: 10px;
+    padding-left: 15px;
+    border-left: 3px solid #3498db;
+  }
+  

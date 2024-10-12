@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>リカー スタッフポータル</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- 外部CSSの読み込み -->
+  </head>
+  <body>
+    <h1>リカー スタッフポータル</h1>
+
+    <!-- タブナビゲーション -->
+    <div class="tabs">
+      <button class="tab active" data-tab="products">商品情報</button>
+      <button class="tab" data-tab="knowledge">お酒の知識</button>
+      <button class="tab" data-tab="index">お酒索引</button>
+      <button class="tab" data-tab="recommendations">おすすめ</button>
+      <button class="tab" data-tab="training">トレーニング</button>
+      <button class="tab" data-tab="chuhai">チューハイファインダー</button>
+      <!-- 新しいページ -->
+    </div>
+
+    <!-- 商品情報 -->
+    <div id="products" class="content active">
+      <h2>商品情報</h2>
+      <p>最新の商品情報を検索・閲覧できます</p>
+      <div class="search-bar">
+        <input
+          type="text"
+          placeholder="商品名を入力"
+          aria-label="商品名を入力"
+        />
+        <button>検索</button>
+      </div>
+      <div class="scroll-area">
+        <div class="item">
+          <h3>赤ワイン「シャトー・マルゴー 2015」</h3>
+          <p>産地: フランス ボルドー</p>
+          <p>品種: カベルネ・ソーヴィニヨン、メルロー</p>
+          <p>特徴: フルボディで深みのある味わい、長期熟成向け</p>
+          <p>価格: ¥80,000</p>
+        </div>
+        <div class="item">
+          <h3>日本酒「獺祭 純米大吟醸 磨き二割三分」</h3>
+          <p>産地: 山口県</p>
+          <p>精米歩合: 23%</p>
+          <p>特徴: フルーティーな香りと繊細な味わい</p>
+          <p>価格: ¥5,500</p>
+        </div>
+        <div class="item">
+          <h3>ウイスキー「山崎 18年」</h3>
+          <p>産地: 日本</p>
+          <p>タイプ: シングルモルト</p>
+          <p>特徴: 複雑な風味と長い余韻が特徴</p>
+          <p>価格: ¥35,000</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- お酒の知識 -->
+    <div id="knowledge" class="content">
+      <h2>お酒の知識</h2>
+      <p>様々な種類のお酒について学びましょう</p>
+      <div class="scroll-area">
+        <div class="item">
+          <h3>ワイン</h3>
+          <p>ブドウを発酵させて作られる果実酒の一種です。</p>
+          <div class="sub-category">
+            <h4>赤ワイン</h4>
+            <p>
+              赤ブドウの果皮や種子を一緒に発酵させて作られます。タンニンを多く含み、肉料理との相性が良いです。
+            </p>
+          </div>
+          <div class="sub-category">
+            <h4>白ワイン</h4>
+            <p>
+              白ブドウまたは赤ブドウの果汁のみを発酵させて作られます。爽やかな酸味が特徴で、魚料理や前菜との相性が良いです。
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <h3>日本酒</h3>
+          <p>米、米麹、水を原料とする日本の伝統的な醸造酒です。</p>
+          <div class="sub-category">
+            <h4>純米酒</h4>
+            <p>
+              米と米麹のみで作られる日本酒。添加物を使用せず、米本来の味わいを楽しめます。
+            </p>
+          </div>
+          <div class="sub-category">
+            <h4>吟醸酒</h4>
+            <p>
+              米を50%以下まで精米し、低温でゆっくり発酵させて作られる高級酒。フルーティーな香りが特徴です。
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <h3>ウイスキー</h3>
+          <p>大麦やライ麦などの穀物を原料とし、蒸留して作られる蒸留酒です。</p>
+          <div class="sub-category">
+            <h4>シングルモルト</h4>
+            <p>
+              単一の蒸留所で、100%大麦麦芽のみを原料として作られるウイスキー。個性的な味わいが特徴です。
+            </p>
+          </div>
+          <div class="sub-category">
+            <h4>ブレンデッド</h4>
+            <p>
+              複数の蒸留所のウイスキーをブレンドして作られます。バランスの取れた味わいが特徴です。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- お酒索引 -->
+    <div id="index" class="content">
+      <h2>お酒索引</h2>
+      <p>取り扱いのあるお酒を簡単に探せます</p>
+      <div class="search-bar">
+        <input
+          type="text"
+          placeholder="お酒の名前や種類を入力"
+          aria-label="お酒の名前や種類を入力"
+        />
+        <button>検索</button>
+      </div>
+      <div class="scroll-area">
+        <div class="item">
+          <h3>ワイン</h3>
+          <p>赤ワイン: 50種類</p>
+          <p>白ワイン: 40種類</p>
+          <p>ロゼワイン: 10種類</p>
+          <p>スパークリングワイン: 15種類</p>
+        </div>
+        <div class="item">
+          <h3>日本酒</h3>
+          <p>純米酒: 20種類</p>
+          <p>吟醸酒: 15種類</p>
+          <p>大吟醸酒: 10種類</p>
+          <p>本醸造酒: 5種類</p>
+        </div>
+        <div class="item">
+          <h3>ウイスキー</h3>
+          <p>シングルモルト: 30種類</p>
+          <p>ブレンデッド: 20種類</p>
+          <p>バーボン: 15種類</p>
+          <p>アイリッシュ: 10種類</p>
+        </div>
+        <div class="item">
+          <h3>焼酎</h3>
+          <p>麦焼酎: 25種類</p>
+          <p>芋焼酎: 20種類</p>
+          <p>米焼酎: 10種類</p>
+          <p>泡盛: 5種類</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- おすすめガイド -->
+    <div id="recommendations" class="content">
+      <h2>おすすめガイド</h2>
+      <p>お客様の好みに合わせたおすすめを提案できます</p>
+      <div class="scroll-area">
+        <div class="item">
+          <h3>ワイン初心者向け</h3>
+          <p>軽めの赤ワイン：ピノ・ノワール「ブルゴーニュ・ルージュ」</p>
+          <p>フルーティーな白ワイン：ソーヴィニヨン・ブラン「マールボロ」</p>
+          <p>甘口のスパークリング：モスカート・ダスティ</p>
+        </div>
+        <div class="item">
+          <h3>日本酒初心者向け</h3>
+          <p>フルーティーな吟醸酒：「獺祭 純米大吟醸 45」</p>
+          <p>さっぱりとした純米酒：「久保田 千寿」</p>
+          <p>甘めの本醸造：「松竹梅 白壁蔵」</p>
+        </div>
+        <div class="item">
+          <h3>ウイスキー愛好家向け</h3>
+          <p>複雑な風味のシングルモルト：「ラフロイグ 10年」</p>
+          <p>バランスの良いブレンデッド：「ジョニーウォーカー ブルーラベル」</p>
+          <p>個性的な日本産ウイスキー：「響 17年」</p>
+        </div>
+        <div class="item">
+          <h3>食事と一緒に楽しむ方へ</h3>
+          <p>寿司との相性：辛口の純米酒「久保田 碧寿」</p>
+          <p>
+            ステーキとの相性：フルボディの赤ワイン「カベルネ・ソーヴィニヨン」
+          </p>
+          <p>チーズとの相性：熟成シャンパーニュ「ドン・ペリニヨン」</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- スタッフトレーニング -->
+    <div id="training" class="content">
+      <h2>スタッフトレーニング</h2>
+      <p>接客スキルや商品知識を向上させるための教材です</p>
+      <div class="scroll-area">
+        <div class="item">
+          <h3>接客の基本</h3>
+          <p>1. お客様への挨拶と笑顔の重要性</p>
+          <p>2. 丁寧な言葉遣いとボディランゲージ</p>
+          <p>3. お客様のニーズを聞き出す質問技法</p>
+          <p>4. クレーム対応の基本と実践</p>
+        </div>
+        <div class="item">
+          <h3>ワインのテイスティング</h3>
+          <p>1. ワインの見た目：色と濁り</p>
+          <p>2. 香りの分析：第一アロマと第二アロマ</p>
+          <p>3. 味わいの要素：酸味、タンニン、アルコール感</p>
+          <p>4. 後味と全体的なバランスの評価</p>
+        </div>
+        <div class="item">
+          <h3>日本酒の知識</h3>
+          <p>1. 日本酒の製造工程</p>
+          <p>2. 特定名称酒の違い（純米、吟醸、大吟醸）</p>
+          <p>3. 日本酒の温度による味わいの変化</p>
+          <p>4. 地域による日本酒の特徴</p>
+        </div>
+        <div class="item">
+          <h3>お酒と料理のペアリング</h3>
+          <p>1. ワインと料理のマリアージュの基本</p>
+          <p>2. 日本酒と和食のペアリング</p>
+          <p>3. ウイスキーとおつまみの組み合わせ</p>
+          <p>4. 季節に応じたお酒と料理の提案</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- チューハイファインダー -->
+    <div id="chuhai" class="content">
+      <h2>チューハイファインダー</h2>
+      <div id="filters">
+        <div>
+          <label for="brand">ブランド:</label>
+          <select id="brand"></select>
+        </div>
+        <div>
+          <label for="sugarContent">糖分:</label>
+          <select id="sugarContent">
+            <option value="">すべて</option>
+            <option value="有糖">有糖</option>
+            <option value="無糖">無糖</option>
+          </select>
+        </div>
+        <div>
+          <label for="minAlcohol"
+            >最小アルコール度数: <span id="minAlcoholValue">3</span>%</label
+          >
+          <input
+            type="range"
+            id="minAlcohol"
+            min="3"
+            max="9"
+            step="1"
+            value="3"
+          />
+        </div>
+        <div>
+          <label for="maxAlcohol"
+            >最大アルコール度数: <span id="maxAlcoholValue">9</span>%</label
+          >
+          <input
+            type="range"
+            id="maxAlcohol"
+            min="3"
+            max="9"
+            step="1"
+            value="9"
+          />
+        </div>
+        <div>
+          <label for="searchTerm">キーワード検索:</label>
+          <input
+            type="text"
+            id="searchTerm"
+            placeholder="商品名や説明文で検索"
+          />
+        </div>
+      </div>
+      <div id="results">
+        <h2>検索結果: <span id="resultCount">0</span>件</h2>
+        <ul id="chuhaiList"></ul>
+      </div>
+    </div>
+    <script src="chuhaiList.mjs"></script>
+    <script type="module" src="index.mjs"></script>
+    <!-- 外部JavaScriptの読み込み -->
+  </body>
+</html>
